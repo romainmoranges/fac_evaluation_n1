@@ -1,0 +1,227 @@
+/* Configuration */
+@font-face {
+    font-family: 'BerninaSans';
+    font-style: normal;
+    font-weight: normal;
+    src: url('../fonts/BerninaSans-Web-CondensedBold.woff2') format('woff2');
+    }
+
+@font-face {
+    font-family: 'GothamHTF-Book';
+    font-style: normal;
+    font-weight: normal;
+    src: local('GothamHTF-Book'), url('../fonts/GothamHTF-Book.woff') format('woff');
+}
+
+*{
+    margin:0px;
+    padding:0px;
+}
+
+h1, h2, h3, p, a{
+    color: #01455a;
+}
+h1, p {
+    font-family: 'BerninaSans';
+}
+
+h2, h3, a{
+    font-family: "GothamHTF-Book"
+}
+
+/* Header */
+header.image{
+    width:100%;
+    position: relative;
+}
+
+header.image img{
+    width:100%;
+}
+
+header.image div.promotion{
+    position: absolute;
+    top:50px;
+    right:20px;
+    width:200px;
+    background: #810426;
+    transform:rotate(25deg); 
+    border-radius: 5px;
+}
+
+header.image div.promotion p{
+    color:white;
+    padding:10px;
+    font-family: 'GothamHTF-Book';
+    text-align: center;
+}
+
+header.image div.promotion p i{
+    font-size: 0.6em;
+    font-style: normal;
+}
+
+header.image div.accroche{
+    position: absolute;
+    bottom: 20px;
+    background: rgba(255,255,255, 0.2);
+    width:100%;
+    padding-top:5px;
+    padding-bottom:5px;
+}
+
+header.image div.accroche p {
+    color:white;
+}
+
+header.image div.accroche p i{
+    font-size: 0.6em;
+    font-style: normal;
+}
+
+
+/* Main */
+main{
+    background: #f7ffff;
+    padding-top:20px;
+    padding-bottom:20px;
+}
+
+main header, section, aside{
+    padding-left:25%;
+    padding-right:25%;
+}
+
+main header{
+    display:flex;
+    justify-content: space-between;
+    padding-bottom:30px;
+}
+
+
+main header img {
+    display: inline-block;
+}
+
+main header a{
+    text-decoration: none;
+    border: solid 1px #01455a;
+    border-radius: 10px;
+    padding:10px;
+}
+
+main section{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom:30px;
+}
+
+main section h1{
+    text-align:center;
+    font-size: 2em;
+    padding-bottom:50px;
+}
+
+main section p{
+    text-align: center;
+    width:80%;
+}
+
+main section div.techno{
+    align-self: flex-end;
+    padding-right: 10%;
+}
+
+main section div.techno p{
+    width:100%;
+    letter-spacing: 7pt;
+    padding-top:50px;
+}
+
+main aside{
+    display:flex;
+    justify-content: space-around;
+}
+
+main aside p.technologie{
+    text-align: right;
+}
+
+main aside div{
+    width:20%;
+    box-shadow: inset 0px 0px 10px 10px #FFF;
+}
+
+main aside div img{
+    border-radius:50%;
+    width:100%;
+    margin-top: 20px;
+    margin-bottom:20px;
+}
+
+main aside div h3.img-desc {
+    text-align: center;
+    font-size: 0.9em;
+}
+
+/* Mobile */
+
+@media screen and (max-width: 480px) {
+    main header, section, aside{
+        padding-left:2%;
+        padding-right:2%;
+    }
+
+    main section div.techno{
+        align-self: flex-start;
+        padding-top:50px;
+        padding-left: 10%;
+    }
+
+    main section div.techno p {
+        width: 100%;
+        letter-spacing: 3pt;
+    }
+
+    main aside{
+        flex-direction: column;
+        align-items: center;
+    }
+    main aside div{
+        width:70%;
+    }
+    main aside div:first-child{
+        order:1
+    }
+  }
+
+/* Tablette */
+
+@media screen and (min-width:481px) and (max-width: 768px) {
+    main header, section, aside{
+        padding-left:5%;
+        padding-right:5%;
+    }
+    
+    main section div.techno{
+        align-self: flex-start;
+        padding-top:50px;
+        padding-left: 10%;
+    }
+
+    main section div.techno p {
+        width: 100%;
+        letter-spacing: 3pt;
+    }
+
+    main aside{
+        justify-content: center;
+        flex-wrap:wrap;
+    }
+    main aside div{
+        width:30%;
+        margin-right:10%;
+        margin-left:10%;
+    }
+  }
