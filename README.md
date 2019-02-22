@@ -27,3 +27,5 @@ et au grand public de bénéficier de cette thérapie puissante et novatrice.
 *  2pts : image principale responsive
 *  2pts : polices
 *  2pts : texte promotionnel en rouge
+
+https://romainmoranges.github.io/fac_evaluation_n1/.
